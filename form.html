@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fonts-awesome-->
+  <script src="https://kit.fontawesome.com/0c822ab8ba.js" crossorigin="anonymous"></script>
+  <!--Google-fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <!--Google-Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Boostrap 4.0.0-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Boostrap 5.0.1-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <!--CSS-LINK-->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <title>Flats Armenia</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+  emailjs.init("user_EbLvG3iACRgi6RcDBExzK");
+})();
+ </script>
+</head>
+<body class="bgn">
+  <div id="logo-form"><a href="index.html">
+      <p id="logo-form-1">Flats</p>
+      <p id="logo-form-2">Armenia</p>
+    </a>
+  </div>
+  <div class="jumbotron">
+    <h3 class="confirm"></h3>
+    <p class="jumbo-title">Contact us to make a reservation</p>
+    <div class="alert alert-secondary" role="alert">
+      <div class="center-form">
+        <form id="form-1" onsubmit="return sendMail(this);">
+          <input type="text" name="name" class="form-control"  pattern="^[^\s][A-Za-z0-9\s]{5,50}$" id="fullname" placeholder="Name (Min-5 Max-50 characters)" required />
+          <br>
+          <input type="text" name="emailaddress" class="form-control" id="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required />
+          <br>
+          <textarea rows="5" name="message" class="form-control" id="message" placeholder="Writer your message here (Min-5 Max-400 characters)" minlength="5" maxlength="400" pattern="^[^\s][A-Za-z0-9\s]{20,400}$"
+            required></textarea>
+
+          <button type="submit" id="button-1" class="btn btn-secondary btn-1 center-block">Send!</button>
+          <h2 class="confirm"></h2>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div id="info" class="row">
+      <div class="col-7">
+        <ul id="social">
+          <li class="horizontal style"><a href="#flats">Flats Armenia</a></li>
+          <li class="horizontal"><a
+              href="https://www.airbnb.nl/rooms/31710601?translate_ugc=false&federated_search_id=bd0668a5-f300-4bf9-8739-6a45bd5bab67&source_impression_id=p3_1626727324_x%2BwKQZFZcJ4nUCVn&guests=1&adults=1"><i
+                class="fab fa-airbnb"></i></a></li>
+          <li class="horizontal"><a href="https://www.instagram.com/alquiler_armenia_quindio/"><i
+                class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div id="contact" class="col-5">
+        <p><span class="bold">Email:</span> flatsarmenia@gmail.com</p>
+        <p><span class="bold">Telephone:</span> +31612767649</p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!--ajax-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!--Boostrap.4.0.0-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Boostrap.5.0.1-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+</html>
