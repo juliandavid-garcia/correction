@@ -8,12 +8,12 @@ nav{
 #gif {
   height: 70px;
   width: 70px;
-  margin-left: 45%;
+  margin-left: 40%;
   opacity: 1;
   margin-top: 9%;
 }
 #photo-1{
-  width: 100%;
+  width: 98%;
   height: 800px;
   position: absolute;
 }
@@ -139,6 +139,11 @@ display: inline;
 
 /*mac 1280px  responsiveness*/
 @media screen and (max-width: 1440px) {
+  #photo-1{
+    width: 98%;
+    height: 800px;
+    position: absolute;
+  }
   .text-icon-1{
     padding-left: 2.5%;
     }
@@ -278,11 +283,18 @@ hr{
     margin-top: 9%;
     margin-left: 20px;
 }
+#amenities {
+  background: #0a0a0a;
+  color:#ffffff;
+  font-family: "heebo";
+  height:622px;
+ width: 100%;
+}
 }
 /*ipad  responsiveness*/
 @media screen and (width: 768px){
   #photo-1 {
-    width: 100%;
+    width: 98%;
     height: 500px;
     position:absolute
 }
@@ -319,7 +331,13 @@ hr{
   opacity: 1;
   margin-top: 9%;
 }
-
+#amenities {
+  background: #0a0a0a;
+  color:#ffffff;
+  font-family: "heebo";
+  height:622px;
+ width: 100%;
+}
 #amenities ul {
   padding-left: 10%;
 }
@@ -374,7 +392,7 @@ hr{
 /*ipad  pro responsiveness*/
 @media screen and (width: 1024px){
   #photo-1 {
-    width: 100%;
+    width: 98%;
     position: absolute;
 }
 #landing-page{
@@ -414,6 +432,13 @@ hr{
   margin-left: 10%;
   margin-top: 10%;
   margin-right: 0%;
+}
+#amenities {
+  background: #0a0a0a;
+  color:#ffffff;
+  font-family: "heebo";
+  height:622px;
+ width: 100%;
 }
 #amenities ul {
   padding-left: 10%;
