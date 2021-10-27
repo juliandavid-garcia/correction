@@ -40,6 +40,100 @@ hr{
   margin-top: 15%;
   margin-right: 0%;
 }
+
+/*--start Amenities--*/
+#amenities {
+  background: #0a0a0a;
+  color:#ffffff;
+  font-family: "heebo";
+  height:822px;
+ width: 100%;
+}
+
+.amenities-title{
+  text-align: center;
+  padding-top:5% ;
+}
+
+#amenities li{
+  display: inline;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#amenities ul{
+  padding-left: 20%;
+}
+
+.font-amenities{
+display: inline;
+}
+
+.amen-icons{
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 9%;
+}
+
+.text-icon{
+  padding-left: 2.5%;
+}
+/*Icons--google*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 80px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.text-icon-1{
+padding-left: 2.2%;
+}
+.text-icon-2{
+  padding-left: 5%;
+  }
+  .text-icon-3{
+    padding-left: 4%;
+    }
+    .text-icon-4{
+      padding-left: 1.3%;
+      }
+      .text-icon-5{
+        padding-left: 1.3%;
+        }
+        .text-icon-6{
+          padding-left: 0.5%;
+          }
+          .text-icon-7{
+            padding-left: 2.2%;
+            }
+            .text-icon-8{
+              padding-left: 4%;
+              }
+              .text-icon-9{
+                padding-left: 2%;
+                }
+                .text-icon-10{
+                  padding-left: 1.3%;
+                  }
+
 /*mobile  responsiveness*/
 @media screen and (max-width: 768px) {
  
