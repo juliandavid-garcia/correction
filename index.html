@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--fonts-awesome-->
   <script src="https://kit.fontawesome.com/0c822ab8ba.js" crossorigin="anonymous"></script>
@@ -27,286 +26,64 @@
   <title>Flats Armenia</title>
 </head>
 
-<body class="container-fluid no-gutters">
-  <!--Landing page lg md -->
-  <!-- The overlay -->
-  <div id="myNav" class="overlay">
+<body>
+   <!-- Top Navigation Hamburger Menu -->
+   <nav id="menubar" class="col container-fluid no-gutters">
+    <div class="d-block d-sm-none">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item active" href="#amenities">Amenities</a>
+                <a class="dropdown-item" href="#map">Map</a>
+                <a class="dropdown-item" href="#carousel">Gallery</a>
+                <a class="dropdown-item" href="#calendar">Reserve</a>
+            </div>
+        </div>
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="#amenities">Amenities</a>
-      <a href="#map">Map</a>
-      <a href="#carousel">Gallery</a>
-      <a href="#calendar">Reserve</a>
     </div>
-
-  </div>
-
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <div id="menu-hamburguer">
-    <span id="hamburguer-touch" onclick="openNav()"><i class="fas fa-bars"></i></span>
-  </div>
-  <div id="landing-page">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <div id="logo"><span id="flats">Flats</span>
-            <br><span id="armenia">Armenia</span>
-          </div>
-          <h1 id="title">It does not matter much where you live.</h1>
-          <p id="small-letter">It only matters how well you live when you are here.</p>
-          <img src="https://media.giphy.com/media/izyX9thmrMKMbUPx4b/giphy.gif" alt="gemotric gif" id="gif">
+    <!-- Top Navigation Hamburger Menu -->
+  <nav class="d-none d-sm-block no-gutters">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#amenities">Amenities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#map">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#carousel">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#calendar">Reserve</a>
+      </li>
+    </ul>
+  </nav>
+<!--landing page-->
+<div id="landing-page">
+  <div class="container-fluid no-gutters">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="logo"><span id="flats">Flats</span>
+          <br><span id="armenia">Armenia</span>
+        </div>
+        <h1 id="title">It does not matter much where you live.</h1>
+        <p id="small-letter">It only matters how well you live when you are here.</p>
+        <img src="https://media.giphy.com/media/izyX9thmrMKMbUPx4b/giphy.gif" alt="gemotric gif" id="gif">
           <hr>
         </div>
-        <div id="black-side" class="col-md-6 d-none d-sm-block">
-          <div id="outer-image">
-            <div id="carouselExampleSlidesOnly-1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item background-image active">
-                  <img src="assets/images/carousel-1.jpg" class="d-block w-100 motion" alt="...">
-                </div>
-                <div class="carousel-item background-image">
-                  <img src="assets/images/cuadro.jpg" class="d-block w-100 motion" alt="...">
-                </div>
-                <div class="carousel-item background-image">
-                  <img src="assets/images/room.jpg" class="d-block w-100 motion" alt="...">
-                </div>
-              </div>
-            </div>
-            <div class="opaque-overlay">
-              <nav id="menu-bar">
-                <ul class="nav justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#amenities">Amenities</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#map">Map</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#carousel">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#calendar">Reserve</a>
-                  </li>
-                </ul>
-              </nav>
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/images/carousel-1.jpg" class="d-block round-image" alt="decoration-flat">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/cuadro.jpg" class="d-block round-image" alt="minimalist-picture-flat">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/room.jpg" class="d-block round-image" alt="room-armenia">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 col-md-6 d-none d-sm-block">
+          <img src="assets/images/room.jpg" id="photo-1" alt="room-armenia">
         </div>
       </div>
     </div>
   </div>
-  <!--end landing page lg md-->
-  <!--Amenities-->
-  <div id="amenities" class="container-fluid">
-    <div class="row">
-      <h1 class="amenities-title">Amenities</h1>
-      <div class="col-6 col-md-12">
-        <ul class=amen-icons>
-          <li><i class="material-icons">wifi</i><span class="d-md-none text-position">Wifi</span></li>
-          <li><i class="material-icons">tv</i><span class="d-md-none text-position">TV</span></li>
-          <li><i class="material-icons">blender</i><span class="d-md-none text-position">Blender</span></li>
-          <li><i class="material-icons">microwave</i><span class="d-md-none text-position">Microwave</span></li>
-          <li><i class="material-icons">local_laundry_service</i><span class="d-md-none text-position">Laundry</span>
-          </li>
-        </ul>
-        <ul class="amen-text d-none d-sm-block">
-          <li><span class="text-icon-1">Wifi</span></li>
-          <li><span class="text-icon-2">TV</span></li>
-          <li><span class="text-icon-3">Blender</span></li>
-          <li><span class="text-icon-4">Microwave</span></li>
-          <li><span class="text-icon-5">Laundry</span></li>
-        </ul>
-      </div>
-      <div class="col-sm-12 col-6">
-        <ul class=amen-icons>
-          <li><i class="material-icons">flatware</i><span class="d-md-none text-position">Cutlery</span></li>
-          <li><i class="material-icons">iron</i><span class="d-md-none text-position">Iron</span></li>
-          <li><i class="material-icons">shower</i><span class="d-md-none text-position">Shower</span></li>
-          <li><i class="material-icons">elevator</i><span class="d-md-none text-position">Elevator</span></li>
-          <li><i class="material-icons">not_interested</i><span class="d-md-none text-position">No Parking</span></li>
-        </ul>
-        <ul class="amen-text d-none d-sm-block">
-          <li><span class="text-icon-6">Silverware</span></li>
-          <li><span class="text-icon-7">Iron</span></li>
-          <li><span class="text-icon-8">Shower</span></li>
-          <li><span class="text-icon-9">Elevator</span></li>
-          <li><span class="text-icon-10">Not parking</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!--Gallery-->
-  <div id="carousel" class="container-fluid">
-    <div class="row">
-      <div class="col-4 d-none d-xl-block">
-        <div id="logo-2"><span id="flats-2">Flats</span>
-          <br><span id="armenia-2">Armenia</span>
-        </div>
-        <ul id="house-sections">
-          <li class="vertical-list color-1">
-            <h1>Livingroom</h1>
-          </li>
-          <li class="vertical-list color-2">
-            <h1>Bathroom</h1>
-          </li>
-          <li class="vertical-list color-3">
-            <h1>Elevator</h1>
-          </li>
-          <li class="vertical-list color-4">
-            <h1>Kitchen</h1>
-          </li>
-          <li class="vertical-list color-5">
-            <h1>Room</h1>
-          </li>
-
-        </ul>
-      </div>
-      <div class="col-8">
-        <div class="carrousel-titles-2">
-          <ul id="carousel-list">
-            <li>
-              <h5>Design</h5><span id="minimal">Minimalist</span>
-            </li>
-            <li>
-              <h5>Style</h5><span id="diaphan">Diaphanous</span>
-            </li>
-          </ul>
-          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/images/fridge.jpg" class="d-block w-100 image-height" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="slide-white">kitchen with refrigerator.</h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/images/kitchen-1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="slide-white">fully equipped kitchen </h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/images/room1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Confortable room with closet</h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/images/bathroom.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Toilet and sink</h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/images/kitchen3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Drawers fully equipped with kitchen appliances</h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/images/shower.jpg" class="d-block w-100 image-height" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Hot water shower</h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Reserve-->
-    <div id="calendar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-7 ">
-            <div class="elfsight-app-0c8169be-a261-493d-876f-62c4e778d07e"></div>
-          </div>
-          <div class="col-5">
-            <p class="text-center">Check our avaliability and message us to book your reservation.</p>
-            <a href="form.html" class="btn btn-dark">Reserve</a>
-            <hr class="hr">
-            <p class="badge-title">Rent a week and get <span class="badge bg-secondary">20%</span> discount</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Review-->
-  <div id="review" class="container-fluid">
-    <div class="row block">
-      <div class="col-6">
-        <div class="row">
-          <div class="col-6 margin-image"><img class="round-image-1" src="assets/images/guy-image.png" alt="guest-mam">
-          </div>
-          <div class="col-6 margin-paragraph">
-            <p>"Excellent communication, it helps a lot with what is needed. Recommended."</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 block">
-        <div class="row">
-          <div class="col-6 margin-image"><img class="round-image-1" src="assets/images/girl-image.png" alt="guest-mam">
-          </div>
-          <div class="col-6 margin-paragraph">
-            <p>"Everything was fantastic, good location, very clean, 100% attention, in short I would return"</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--map-->
-  <div id="map"></div>
+<!--end landing page lg md-->
+  
   <footer id="footer">
-    <div id="info" class="row">
+    <div id="info" class="">
       <div class="col-7">
         <ul id="social">
           <li class="horizontal style"><a href="#flats">Flats Armenia</a></li>
@@ -323,6 +100,7 @@
 
       </div>
     </div>
+  </footer>
   </footer>
   <script>
     var APIkey = "AIzaSyD6F2UYda2LUohDHbhWN4rVdmyiPNs7oMw";
