@@ -268,6 +268,111 @@ display: inline;
     height: 580px;
     border-radius: 1%;
   }
+    /*--Calendar section*/  
+    .col-5{
+      background-color:black;
+      color:#ffff;
+      font-size: 45px;
+    }
+    
+    .text-center{
+  margin-top: 20%;
+  margin-right: 10%;
+  margin-left: 15%;
+    }
+  
+    .badge {
+      display: inline-block;
+      padding: .35em .65em;
+      font-size: .75em;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: .25rem;
+  }
+  
+  .bg-secondary {
+      background-color: #ffc107!important;
+  }
+  
+  #calendar .badge-title{
+    font-size:18px;
+    margin-right: 15%;
+  margin-left: 25%;
+  margin-top:2%;
+  font-weight:lighter;
+  }
+  
+  #calendar .btn {
+    margin-left: 43%;
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  
+  .btn-dark {
+    color: #fff;
+    background-color: #000000;
+    border-color: #e9ecef;
+  }
+  
+  .hr{
+    margin-top: 45%;
+  margin-left: 17%;
+  }
+  .btn {
+    margin-left: 43%;
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  
+  .round-image-1{
+    height: 100px;
+      border-radius: 50%;
+      margin-top: 1%;
+      margin-left: 25%;
+      display: inline;
+  }
+  
+  .margin-image{
+    margin-top: 20%;
+    width:40%;
+    color: #ffff;
+  }
+  
+  .margin-paragraph {
+    margin-top: 25%;
+    width: 60%;
+    color: #ffff;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+  }
+  
+  #review{
+    width:100%;
+    height:400px;
+    background-color:
+    #111111;
+    }
+  
+  .margin-paragraph {
+    margin-top: 25%;
+    width: 60%;
+    color: #ffff;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+  }
+  div#map {
+    min-height: 360px;
+  margin-top: 2%;
+  width:100%;
+  }
+  
+  
 /*mac 1440px  responsiveness*/
 @media screen and (max-width: 1440px) {
   #photo-1{
@@ -325,6 +430,68 @@ display: inline;
   height:550px;
  width: 100%;
 }
+#calendar{
+  width:100%;
+  padding-left:0px
+}
+#responsive { 
+  display:block
+  }
+#calendar{
+  width:100%;
+}
+
+#calendar .badge-title {
+  font-size: 20px;
+  margin-right: 15%;
+  margin-left: 20%;
+  margin-top: 17%;
+  font-weight: lighter;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.hr{
+  display: none;
+}
+.margin-paragraph {
+  margin-top: 100%;
+  width: 60%;
+  color: #ffff;
+  /* padding-left: 25%; */
+  text-align: center;
+  position: absolute;
+  left:20%
+  
+}
+
+.margin-image{
+  margin-top: 27%;
+  width:40%;
+  color: #ffff;
+  margin-left:35px;
+}
+.round-image-1 {
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 1%;
+  margin-left: 0%;
+  display: inline;
+  position: absolute;
+  left: 1px;
+}
+#review {
+  width: 100%;
+  height: 500px;
+  background-color: #111111;
+}
+
 
 }
 /*mobile  responsiveness*/
@@ -447,6 +614,16 @@ hr{
   height:622px;
  width: 100%;
 }
+.round-image-1 {
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 30%;
+  margin-left: 0%;
+  display: inline;
+  position: absolute;
+  left: 30%;
+  
+}
 }
 /*ipad  responsiveness*/
 @media screen and (width: 768px){
@@ -560,6 +737,36 @@ hr{
       border-left: rgba(0,0,0,0.6) solid 3px;
       margin-left: 50px;
   }
+  .margin-paragraph {
+    margin-top: 20%;
+    width: 60%;
+    color: #ffff;
+    padding-left: 25%;
+    text-align: center;
+    position: absolute;
+    
+  }
+  
+  .margin-image{
+    margin-top: 20%;
+    width:40%;
+    color: #ffff;
+    margin-left:40%;
+  }
+  .round-image-1 {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: -100%;
+    display: inline;
+}
+
+  
+  div#map {
+    min-height: 360px;
+    margin-top: 2%;
+    width: 100%;
+  }
 }
 /*ipad  pro responsiveness*/
 @media screen and (width: 1024px){
@@ -656,4 +863,11 @@ hr{
     margin-left: 60px;
 }
   
+}
+@media screen and (max-width: 768px){
+.col-7 {
+  display: none;
+}
+#responsive { 
+
 }

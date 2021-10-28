@@ -28,7 +28,7 @@
 
 <body container no-gutters>
    <!-- Top Navigation Hamburger Menu -->
-   <nav id="menubar" class="col container-fluid no-gutters">
+   <nav id="menubar" class="col">
     <div class="d-block d-sm-none">
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -45,7 +45,7 @@
     </div>
   </nav>
     <!-- Top Navigation Hamburger Menu -->
-  <nav class="d-none d-sm-block no-gutters">
+  <nav class="d-none d-sm-block">
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" href="#amenities">Amenities</a>
@@ -231,26 +231,49 @@
         </div>
       </div>
     </div>
-  <footer id="footer">
-    <div id="info" class="">
-      <div class="col-7">
-        <ul id="social">
-          <li class="horizontal style"><a href="#flats">Flats Armenia</a></li>
-          <li class="horizontal"><a
-              href="https://www.airbnb.nl/rooms/31710601?translate_ugc=false&federated_search_id=bd0668a5-f300-4bf9-8739-6a45bd5bab67&source_impression_id=p3_1626727324_x%2BwKQZFZcJ4nUCVn&guests=1&adults=1"><i
-                class="fab fa-airbnb"></i></a></li>
-          <li class="horizontal"><a href="https://www.instagram.com/alquiler_armenia_quindio/"><i
-                class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
-      <div id="contact" class="col-5">
-        <p><span class="bold">Email:</span> flatsarmenia@gmail.com</p>
-        <p><span class="bold">Telephone:</span> +31612767649</p>
-
+     <!--Reserve-->
+     <div id="calendar">
+      <div class="container-fluid no-gutters">
+        <div class="row">
+          <div class="col-7">
+            <div class="elfsight-app-0c8169be-a261-493d-876f-62c4e778d07e"></div>
+          </div>
+          <div class="col-5">
+            <p class="text-center">Check our avaliability and message us to book your reservation.</p>
+            <a href="form.html" class="btn btn-dark">Reserve</a>
+            <hr class="hr">
+            <p class="badge-title">Rent a week and get <span class="badge bg-secondary">20%</span> discount</p>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-  </footer>
+  
+  <!--Review-->
+  <div id="review" class="container-fluid no-gutters">
+    <div class="row block">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6 margin-image"><img class="round-image-1" src="assets/images/guy-image.png" alt="guest-mam">
+          </div>
+          <div class="col-6 margin-paragraph">
+            <p>"Excellent communication, it helps a lot with what is needed. Recommended."</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 block">
+        <div class="row">
+          <div class="col-6 margin-image"><img class="round-image-1" src="assets/images/girl-image.png" alt="guest-mam">
+          </div>
+          <div class="col-6 margin-paragraph">
+            <p>"Everything was fantastic, good location, very clean, 100% attention, in short I would return"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--map-->
+<div id="map"></div>
+
   <script>
     var APIkey = "AIzaSyD6F2UYda2LUohDHbhWN4rVdmyiPNs7oMw";
   </script>
